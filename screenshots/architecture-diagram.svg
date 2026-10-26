@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" width="1000" height="600" style="background:#070b14; font-family:'SF Mono', 'Roboto Mono', monospace;">
+  <defs>
+    <linearGradient id="gradCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0.1"/>
+    </linearGradient>
+    <linearGradient id="gradGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#059669" stop-opacity="0.1"/>
+    </linearGradient>
+    <linearGradient id="gradAmber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#d97706" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Title Banner -->
+  <rect x="30" y="25" width="940" height="65" rx="8" fill="#0d1424" stroke="#1e293b" stroke-width="1.5"/>
+  <text x="50" y="55" fill="#00f0ff" font-size="18" font-weight="bold" letter-spacing="1">ARINC 746 CABIN COMMUNICATIONS SYSTEM (CCS / CTU) ARCHITECTURE</text>
+  <text x="50" y="74" fill="#64748b" font-size="11">Cabin Distribution Network • SATCOM Aero-H+ / Iridium PBX • Priority Arbitration &amp; IFC Gateway</text>
+  <rect x="830" y="42" width="120" height="28" rx="4" fill="#00f0ff" fill-opacity="0.15" stroke="#00f0ff" stroke-width="1"/>
+  <text x="890" y="60" fill="#00f0ff" font-size="10" font-weight="bold" text-anchor="middle">RECORD #402</text>
+
+  <!-- Left: Cabin Distribution & Terminals -->
+  <rect x="30" y="110" width="280" height="440" rx="8" fill="url(#gradCyan)" stroke="#00f0ff" stroke-width="1.5"/>
+  <text x="50" y="140" fill="#00f0ff" font-size="14" font-weight="bold">CABIN TERMINALS (STUs)</text>
+  <text x="50" y="160" fill="#94a3b8" font-size="10">Boeing 777-300ER Cabin Network</text>
+
+  <rect x="50" y="180" width="240" height="75" rx="6" fill="#090e1a" stroke="#1e293b"/>
+  <text x="65" y="205" fill="#ef4444" font-size="11" font-weight="bold">Flight Deck Audio (Priority 1)</text>
+  <text x="65" y="223" fill="#64748b" font-size="9">• ATC Air-to-Ground Voice Communications</text>
+  <text x="65" y="238" fill="#64748b" font-size="9">• Instant Sub-500ms Preemption Rights</text>
+
+  <rect x="50" y="270" width="240" height="75" rx="6" fill="#090e1a" stroke="#1e293b"/>
+  <text x="65" y="295" fill="#f59e0b" font-size="11" font-weight="bold">Cabin Crew Stations (Priority 2)</text>
+  <text x="65" y="313" fill="#64748b" font-size="9">• Fwd &amp; Aft Galley Intercom Handsets</text>
+  <text x="65" y="328" fill="#64748b" font-size="9">• Public Address (PA) Chime Interfaces</text>
+
+  <rect x="50" y="360" width="240" height="75" rx="6" fill="#090e1a" stroke="#1e293b"/>
+  <text x="65" y="385" fill="#10b981" font-size="11" font-weight="bold">Seat Terminal Units (Priority 3)</text>
+  <text x="65" y="403" fill="#64748b" font-size="9">• First, Business &amp; Economy Handsets</text>
+  <text x="65" y="418" fill="#64748b" font-size="9">• Integrated Credit Card Readers (PCI-DSS)</text>
+
+  <rect x="50" y="450" width="240" height="80" rx="6" fill="#090e1a" stroke="#1e293b"/>
+  <text x="65" y="475" fill="#e2e8f0" font-size="11" font-weight="bold">Passenger Wi-Fi Devices</text>
+  <text x="65" y="493" fill="#64748b" font-size="9">• Personal Electronic Devices (PEDs)</text>
+  <text x="65" y="508" fill="#64748b" font-size="9">• Ka-band In-Flight Connectivity (IFC)</text>
+
+  <!-- Center: CTU Switching & Matrix -->
+  <rect x="360" y="110" width="280" height="440" rx="8" fill="url(#gradGreen)" stroke="#10b981" stroke-width="1.5"/>
+  <text x="380" y="140" fill="#10b981" font-size="14" font-weight="bold">ARINC 746 CTU SWITCH</text>
+  <text x="380" y="160" fill="#94a3b8" font-size="10">Cabin Telecommunications Unit</text>
+
+  <circle cx="500" cy="230" r="45" fill="#090e1a" stroke="#10b981" stroke-width="2"/>
+  <text x="500" y="225" fill="#10b981" font-size="12" font-weight="bold" text-anchor="middle">📞 PBX</text>
+  <text x="500" y="242" fill="#64748b" font-size="9" text-anchor="middle">Matrix Switch</text>
+
+  <rect x="380" y="310" width="240" height="115" rx="6" fill="#090e1a" stroke="#1e293b"/>
+  <text x="395" y="335" fill="#e2e8f0" font-size="11" font-weight="bold">Priority Queue &amp; Preemption</text>
+  <text x="395" y="353" fill="#64748b" font-size="9">• Real-time Channel Allocation Engine</text>
+  <text x="395" y="368" fill="#64748b" font-size="9">• Preemption of Priority 3 Passenger Calls</text>
+  <text x="395" y="383" fill="#64748b" font-size="9">• Guaranteed Cockpit Audio Availability</text>
+  <text x="395" y="398" fill="#64748b" font-size="9">• Billing &amp; Payment Tokenization Gate</text>
+
+  <rect x="380" y="445" width="240" height="85" rx="6" fill="#090e1a" stroke="#1e293b"/>
+  <text x="395" y="470" fill="#f59e0b" font-size="11" font-weight="bold">Call State Lifecycle Engine</text>
+  <text x="395" y="488" fill="#64748b" font-size="9">• IDLE, DIALING, CONNECTED,</text>
+  <text x="395" y="503" fill="#64748b" font-size="9">• PREEMPTED, TERMINATED</text>
+
+  <!-- Right: Satellite Data Unit (SDU) & Ground Gateways -->
+  <rect x="690" y="110" width="280" height="440" rx="8" fill="url(#gradAmber)" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="710" y="140" fill="#f59e0b" font-size="14" font-weight="bold">SATELLITE &amp; GROUND LINK</text>
+  <text x="710" y="160" fill="#94a3b8" font-size="10">SDU &amp; PSTN Ground Earth Stations</text>
+
+  <rect x="710" y="180" width="240" height="105" rx="6" fill="#090e1a" stroke="#1e293b"/>
+  <text x="725" y="205" fill="#e2e8f0" font-size="11" font-weight="bold">RF Bearer Channels</text>
+  <text x="725" y="223" fill="#64748b" font-size="9">• SAT-1: Inmarsat Aero-H+ Voice (Pri 1)</text>
+  <text x="725" y="238" fill="#64748b" font-size="9">• SAT-2: Inmarsat Aero-H+ Voice (Pri 3)</text>
+  <text x="725" y="253" fill="#64748b" font-size="9">• IRD-1: Iridium NEXT Voice (Pri 3)</text>
+  <text x="725" y="268" fill="#64748b" font-size="9">• SAT-DATA: Ka-band Broadband (45 Mbps)</text>
+
+  <rect x="710" y="300" width="240" height="105" rx="6" fill="#090e1a" stroke="#1e293b"/>
+  <text x="725" y="325" fill="#00f0ff" font-size="11" font-weight="bold">ARINC 429 Discrete Bus Stream</text>
+  <text x="725" y="343" fill="#64748b" font-size="9">• Label 270: CTU Status &amp; Line Allocation</text>
+  <text x="725" y="358" fill="#64748b" font-size="9">• Label 271: Call Activity &amp; Preempt Alert</text>
+  <text x="725" y="373" fill="#64748b" font-size="9">• Bit 32 Hardware Odd Parity Verified</text>
+
+  <rect x="710" y="420" width="240" height="110" rx="6" fill="#090e1a" stroke="#1e293b"/>
+  <text x="725" y="445" fill="#10b981" font-size="11" font-weight="bold">Ground Telecommunications</text>
+  <text x="725" y="463" fill="#64748b" font-size="9">• SITA / ARINC Ground Earth Stations</text>
+  <text x="725" y="478" fill="#64748b" font-size="9">• Global PSTN Telephone Interconnect</text>
+  <text x="725" y="493" fill="#64748b" font-size="9">• In-Flight Payment Clearinghouse</text>
+
+  <!-- Connectors -->
+  <path d="M 310 215 L 360 215" stroke="#00f0ff" stroke-width="2"/>
+  <path d="M 640 215 L 690 215" stroke="#10b981" stroke-width="2"/>
+</svg>
